@@ -1,0 +1,42 @@
+{
+	"name": "pipeline12",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.par",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Wait1",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 1
+							}
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"par": {
+				"type": "array",
+				"defaultValue": [
+					"nandini",
+					"leela"
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-05-28T16:36:20Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,63 @@
+{
+	"name": "pipeline executepipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('var1')",
+						"type": "Expression"
+					},
+					"isSequential": false,
+					"activities": [
+						{
+							"name": "Execute Pipeline1",
+							"type": "ExecutePipeline",
+							"dependsOn": [],
+							"policy": {
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"pipeline": {
+									"referenceName": "pipeline12",
+									"type": "PipelineReference"
+								},
+								"waitOnCompletion": true,
+								"parameters": {
+									"par": {
+										"value": "@variables('var2')",
+										"type": "Expression"
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"variables": {
+			"var1": {
+				"type": "Array",
+				"defaultValue": [
+					"hema",
+					"ponugoti"
+				]
+			},
+			"var2": {
+				"type": "Array",
+				"defaultValue": [
+					"hyma",
+					"hemavathi"
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-05-28T16:36:21Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlTable7",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "hemaschema",
+			"table": "organization1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

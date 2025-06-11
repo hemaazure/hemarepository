@@ -1,0 +1,45 @@
+{
+	"name": "pipeline7",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "var2",
+					"value": true
+				}
+			}
+		],
+		"variables": {
+			"var1": {
+				"type": "String",
+				"defaultValue": "hema"
+			},
+			"var2": {
+				"type": "Boolean",
+				"defaultValue": true
+			},
+			"var3": {
+				"type": "Array",
+				"defaultValue": [
+					"hema",
+					"leela"
+				]
+			},
+			"var4": {
+				"type": "Integer",
+				"defaultValue": 11
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-05-27T08:01:07Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

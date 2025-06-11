@@ -1,0 +1,25 @@
+{
+	"name": "trigger4",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline event based",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/gen25/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/94251403-4c15-4c0c-b370-a9cfd5acf6c3/resourceGroups/hemaazure/providers/Microsoft.Storage/storageAccounts/hemastorage1",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}

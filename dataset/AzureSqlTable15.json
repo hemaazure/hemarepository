@@ -1,0 +1,36 @@
+{
+	"name": "AzureSqlTable15",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Productionid_1",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProductName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "quantity_1",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ProductionDate",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "hema",
+			"table": "Production2"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlDatabase5",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "hemaserver17.database.windows.net",
+			"database": "hemasql",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "hemaadmin",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEM2NkQ5NTU5LUFBN0EtNEIyRi1CNTM2LUUyQ0FGNDRFNDVEMl8yNjMxZGIzNC0xMWQ4LTQxZTItYjFjYS1iNjM0ZmU5MmE4ODkiDQp9"
+		}
+	}
+}

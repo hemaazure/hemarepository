@@ -1,0 +1,30 @@
+{
+	"name": "hemapipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [
+					{
+						"name": "wait1",
+						"value": "8"
+					}
+				],
+				"typeProperties": {
+					"waitTimeInSeconds": 8
+				}
+			}
+		],
+		"parameters": {
+			"wait1": {
+				"type": "int",
+				"defaultValue": 3
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-05-26T18:32:08Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

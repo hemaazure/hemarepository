@@ -1,0 +1,49 @@
+{
+	"name": "pipeline until",
+	"properties": {
+		"activities": [
+			{
+				"name": "Until1",
+				"type": "Until",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals(pipeline().parameters.par,variables('var1'))",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Wait1",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 1
+							}
+						}
+					],
+					"timeout": "0.12:00:00"
+				}
+			}
+		],
+		"parameters": {
+			"par": {
+				"type": "string",
+				"defaultValue": "\"hema\""
+			}
+		},
+		"variables": {
+			"var1": {
+				"type": "Array",
+				"defaultValue": [
+					"hema",
+					"ponugoti"
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-05-28T15:19:37Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

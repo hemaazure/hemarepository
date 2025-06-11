@@ -1,0 +1,103 @@
+{
+	"name": "pipeline4_copy1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 9
+				}
+			},
+			{
+				"name": "Wait2",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Wait1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			},
+			{
+				"name": "Wait3",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Wait1",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			},
+			{
+				"name": "Wait4",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Wait1",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 5
+				}
+			}
+		],
+		"parameters": {
+			"wait1": {
+				"type": "int",
+				"defaultValue": 3
+			},
+			"wait2": {
+				"type": "int",
+				"defaultValue": 5
+			},
+			"wait3": {
+				"type": "int",
+				"defaultValue": 6
+			},
+			"wait4": {
+				"type": "int",
+				"defaultValue": 7
+			}
+		},
+		"variables": {
+			"wait1": {
+				"type": "Integer",
+				"defaultValue": 3
+			},
+			"wait2": {
+				"type": "Integer",
+				"defaultValue": 4
+			},
+			"wait3": {
+				"type": "Integer",
+				"defaultValue": 5
+			},
+			"wait4": {
+				"type": "Integer",
+				"defaultValue": 6
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2025-05-26T19:15:34Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

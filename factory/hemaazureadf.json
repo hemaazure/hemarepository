@@ -1,0 +1,17 @@
+{
+	"name": "hemaazureadf",
+	"properties": {
+		"globalParameters": {
+			"gwait": {
+				"type": "int",
+				"value": 5
+			}
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c55d0da4-53e0-4015-8a22-5d4518141243",
+		"tenantId": "c5795262-e924-4d18-83a0-0f823e85f3bc"
+	}
+}
