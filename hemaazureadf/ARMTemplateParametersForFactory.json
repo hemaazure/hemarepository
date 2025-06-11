@@ -1,0 +1,93 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "hemaazureadf"
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase3_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase4_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase5_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase6_password": {
+			"value": ""
+		},
+		"Azuregen2Storage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "hemaserver17.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "hemasql"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "hemaadmin"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "hemaserver17.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "hemasql"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "hemaadmin"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"value": "hemaserver17.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"value": "hemasql"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"value": "hemaadmin"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_server": {
+			"value": "hemaserver17.database.windows.net"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_database": {
+			"value": "hemasql"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_userName": {
+			"value": "hemaadmin"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_server": {
+			"value": "hemaserver17.database.windows.net"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_database": {
+			"value": "hemasql"
+		},
+		"AzureSqlDatabase5_properties_typeProperties_userName": {
+			"value": "hemaadmin"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_server": {
+			"value": "hemaserver17.database.windows.net"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_database": {
+			"value": "hemasql"
+		},
+		"AzureSqlDatabase6_properties_typeProperties_userName": {
+			"value": "hemaadmin"
+		},
+		"Azuregen2Storage1_properties_typeProperties_url": {
+			"value": "https://hemastorage1.dfs.core.windows.net/"
+		},
+		"trigger2_properties_pipeline13_parameters_p1": {
+			"value": 0
+		},
+		"trigger4_properties_typeProperties_scope": {
+			"value": "/subscriptions/94251403-4c15-4c0c-b370-a9cfd5acf6c3/resourceGroups/hemaazure/providers/Microsoft.Storage/storageAccounts/hemastorage1"
+		}
+	}
+}
